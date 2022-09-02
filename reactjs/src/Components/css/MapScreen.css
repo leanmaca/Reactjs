@@ -2,9 +2,16 @@ body{
     font-family: AbortSignal, Helvetica, sans-serif;
     font-size:17px;
     line-height:1.6;
-    background: #fff;
+    background: rgb(12, 129, 1);
+ 
+    
 }
-
+.imagebackground {
+    background-attachment: fixed;
+    width: 1920;
+    height: 1920;
+    position: absolute;
+}
 .firstModal-content{
     background-color: #fff;
     margin: 20% auto;
@@ -16,12 +23,29 @@ body{
 
 .button{
     background: coral;
-    padding: 1em, 2em; 
+    padding: 15px; 
     color: #fff;
     border: 0;
+    border-radius: 10px;
+
+}
+
+.button1{
+    background: coral;
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 130px;
+    top: 300px;
 }
 
 .button:hover{
+    background:#333;
+}
+
+.button1:hover{
     background:#333;
 }
 

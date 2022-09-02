@@ -2,6 +2,8 @@ import React from "react";
 import "./css/MapScreen.css";
 import { Modal1, Modal2, Modal3, Modal4 } from "./Modals";
 import { useState } from "react";
+import background from "./css/zoomap.png";
+const map = require("./css/zoomap.png");
 
 const MapScreen = () => {
   const [openModal1, setOpenModal1] = useState(false);
@@ -18,9 +20,14 @@ const MapScreen = () => {
         </head>
 
         <body>
+          {/* <div
+            class="imagebackground"
+            style={{ backgroundImage: `url(${background})` }}
+          > */}
+          <img class="imagebackground" src={map} />
           <button
             type="button"
-            class="button"
+            class="button1"
             id="modalBtn1"
             onClick={() => {
               setOpenModal1(true);
@@ -62,10 +69,8 @@ const MapScreen = () => {
           {openModal2 && <Modal2 closeModal2={setOpenModal2} />}
           {openModal3 && <Modal3 closeModal3={setOpenModal3} />}
           {openModal4 && <Modal4 closeModal4={setOpenModal4} />}
-          {/* <modal2></modal2>
-          <modal3></modal3>
-          <modal4></modal4> */}
           <script src="main.js"></script>
+          {/* </div> */}
         </body>
       </html>
     </div>
