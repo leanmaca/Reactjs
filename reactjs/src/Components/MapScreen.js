@@ -2,8 +2,6 @@ import React from "react";
 import "./css/MapScreen.css";
 import { Modal1, Modal2, Modal3, Modal4 } from "./Modals";
 import { useState } from "react";
-import background from "./css/zoomap.png";
-import { Route, Link } from "react-router-dom";
 const map = require("./css/zoomap.png");
 
 const MapScreen = () => {
