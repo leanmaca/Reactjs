@@ -1,0 +1,159 @@
+body{
+    font-family: AbortSignal, Helvetica, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    background: #fff;
+}
+
+.firstModal-content{
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+
+}
+
+.button{
+    background: coral;
+    padding: 1em, 2em; 
+    color: #fff;
+    border: 0;
+}
+
+.button:hover{
+    background:#333;
+}
+
+.modal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.closeBtn{
+    color: #ccc;
+    float: right;
+    font-size:30px;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.button2{
+    background: coral;
+    padding: 1em, 2em; 
+    color: #fff;
+    border: 0;
+}
+
+.button2:hover{
+    background:#333;
+}
+
+.modal2{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.closeBtn2{
+    color: #ccc;
+    float: right;
+    font-size:30px;
+}
+
+.closeBtn2:hover, .closeBtn2:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.button3{
+    background: coral;
+    padding: 1em, 2em; 
+    color: #fff;
+    border: 0;
+}
+
+.button3:hover{
+    background:#333;
+}
+
+.modal3{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.closeBtn3{
+    color: #ccc;
+    float: right;
+    font-size:30px;
+}
+
+.closeBtn3:hover, .closeBtn3:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button4{
+    background: coral;
+    padding: 1em, 2em; 
+    color: #fff;
+    border: 0;
+}
+
+.button4:hover{
+    background:#333;
+}
+
+.modal4{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.closeBtn4{
+    color: #ccc;
+    float: right;
+    font-size:30px;
+}
+
+.closeBtn4:hover, .closeBtn4:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

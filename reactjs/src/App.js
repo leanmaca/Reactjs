@@ -1,7 +1,10 @@
+import MapScreen from "./Components/MapScreen";
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <MapScreen></MapScreen>
+    </div>
   );
 }
 
