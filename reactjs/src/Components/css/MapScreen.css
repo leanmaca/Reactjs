@@ -21,15 +21,6 @@ body{
 
 }
 
-.button{
-    background: coral;
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
-
-}
-
 .button1{
     background: coral;
     padding: 15px; 
@@ -38,15 +29,64 @@ body{
     border-radius: 10px;
     position: absolute;
     left: 130px;
-    top: 300px;
-}
-
-.button:hover{
-    background:#333;
+    top: 320px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
 }
 
 .button1:hover{
     background:#333;
+    transform: scale(1.1);
+}
+
+.button2{
+    background: coral;
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 240px;
+    top: 640px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.button2:hover{
+    background:#333;
+    transform: scale(1.1);
+}
+
+.button3{
+    background: coral;
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    top: 500px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.button3:hover{
+    background:#333;
+    transform: scale(1.1);
+}
+
+.button4{
+    background: coral;
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 380px;
+    top: 530px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.button4:hover{
+    background:#333;
+    transform: scale(1.1);
 }
 
 .modal{
@@ -75,16 +115,6 @@ body{
 
 
 
-.button2{
-    background: coral;
-    padding: 1em, 2em; 
-    color: #fff;
-    border: 0;
-}
-
-.button2:hover{
-    background:#333;
-}
 
 .modal2{
     display:none;
@@ -111,16 +141,6 @@ body{
 }
 
 
-.button3{
-    background: coral;
-    padding: 1em, 2em; 
-    color: #fff;
-    border: 0;
-}
-
-.button3:hover{
-    background:#333;
-}
 
 .modal3{
     display:none;
@@ -146,16 +166,6 @@ body{
     cursor: pointer;
 }
 
-.button4{
-    background: coral;
-    padding: 1em, 2em; 
-    color: #fff;
-    border: 0;
-}
-
-.button4:hover{
-    background:#333;
-}
 
 .modal4{
     display:none;

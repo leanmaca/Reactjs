@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/MapScreen.css";
+import { Route, Link } from "react-router-dom";
 
 export function Modal1({ closeModal1 }) {
   return (
@@ -13,6 +14,7 @@ export function Modal1({ closeModal1 }) {
           &times;
         </button>
         <p>Enclosure 1</p>
+        <button>Open Animals</button>
       </div>
     </div>
   );
