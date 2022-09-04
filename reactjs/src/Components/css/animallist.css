@@ -1,0 +1,24 @@
+.animalList{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+   
+}
+.list{
+    width: 80%;
+    flex-direction: row;
+    background-color:rgb(143, 143, 143);
+    display: flex;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.imagecontainer{
+    flex:content;
+    width: 98%;
+    border-radius: 5px;
+}
+.animalimage{
+    width: 50%;
+    border-radius: 5px;
+}

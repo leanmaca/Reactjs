@@ -1,8 +1,16 @@
 import React from "react";
 import "./css/MapScreen.css";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, useNavigate } from "react-router-dom";
 
 export function Modal1({ closeModal1 }) {
+const navigate = useNavigate();
+  const openAnimalList = () => {
+    navigate("/animallist", {
+      state: {
+        name: "Elephants"
+      }
+    });
+  }
   return (
     <div class="modal" id="modalId">
       <div class="firstModal-content">
@@ -14,7 +22,8 @@ export function Modal1({ closeModal1 }) {
           &times;
         </button>
         <p>Enclosure 1</p>
-        <button>Open Animals</button>
+        
+        <button onClick={openAnimalList}>Open Animals</button>
       </div>
     </div>
   );

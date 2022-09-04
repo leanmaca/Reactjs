@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "manilazooproject",
   storageBucket: "manilazooproject.appspot.com",
   messagingSenderId: "366656760895",
-  appId: "1:366656760895:web:93145b468c4cce9a2f1c8a"
+  appId: "1:366656760895:web:0b8b5292da757b2f2f1c8a"
 };
 
 // Initialize Firebase
