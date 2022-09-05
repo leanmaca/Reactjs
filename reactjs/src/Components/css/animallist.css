@@ -5,20 +5,24 @@
    
 }
 .list{
-    width: 80%;
+    width: 50%;
     flex-direction: row;
     background-color:rgb(143, 143, 143);
     display: flex;
     padding: 5px;
     margin-top: 5px;
     border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
 }
 .imagecontainer{
-    flex:content;
+    flex: content;
     width: 98%;
     border-radius: 5px;
+    background-color: brown;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
 }
 .animalimage{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
