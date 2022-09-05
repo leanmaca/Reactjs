@@ -12,6 +12,21 @@ body{
     height: 1920;
     position: absolute;
 }
+
+.modal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 0; 
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
 .firstModal-content{
     background-color: #fff;
     margin: 20% auto;
@@ -89,17 +104,7 @@ body{
     transform: scale(1.1);
 }
 
-.modal{
-    display: 'block';
-    position: fixed;
-    z-index:1;
-    left: 0; 
-    top:0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
+
 
 .closeBtn{
     color: #ccc;
