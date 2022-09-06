@@ -3,27 +3,31 @@ import "./css/MapScreen.css";
 import { Route, Link, useNavigate } from "react-router-dom";
 
 export function Modal1({ closeModal1 }) {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const openAnimalList = () => {
     navigate("/animallist", {
       state: {
-        name: "Elephants"
-      }
+        name: "Elephants",
+      },
     });
-  }
+  };
   return (
     <div class="modal" id="modalId">
       <div class="firstModal-content">
-        <button
-          class="closeBtn"
-          id="closeBtn"
-          onClick={() => closeModal1(false)}
-        >
+        <span class="closeBtn" id="closeBtn" onClick={() => closeModal1(false)}>
           &times;
-        </button>
-        <p>Enclosure 1</p>
-        
-        <button onClick={openAnimalList}>Open Animals</button>
+        </span>
+        <div class="modaltitle">
+          <p>Elephants</p>
+        </div>
+        <div class="modaldescription">
+          <p>Sample Description</p>
+        </div>
+        <div class="seeAnimalsBtnDiv">
+          <button class="seeAnimalsBtn" onClick={openAnimalList}>
+            See Animals
+          </button>
+        </div>
       </div>
     </div>
   );

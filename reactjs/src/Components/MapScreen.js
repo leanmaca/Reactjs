@@ -21,7 +21,7 @@ const MapScreen = () => {
           setOpenModal1(true);
         }}
       >
-        Modal 1
+        Elephants
       </button>
       <button
         type="button"
@@ -51,7 +51,7 @@ const MapScreen = () => {
           setOpenModal4(true);
         }}
       >
-        Modal 4
+        Aviary
       </button>
       {openModal1 && <Modal1 closeModal1={setOpenModal1} />}
       {openModal2 && <Modal2 closeModal2={setOpenModal2} />}
