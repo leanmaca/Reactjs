@@ -11,13 +11,27 @@ function AnimalList() {
   const enclosure = location.state.name;
   const [animalData, setAnimalData] = useState([]);
 
+  const openAnimalView = (id) => {
+    navigate("/animalview", {
+      state: {
+        id: id,
+      },
+    });
+  };
   useEffect(() => {
     getAnimals();
   }, []);
 
   useEffect(() => {
     console.log(animalData);
+    console.log(enclosure);
   }, [animalData]);
+
+  const queryConstants = []
+
+  queryConstants.push(where("animal_enclosure", "==", enclosure));
+  queryConstants.push(where("animal_archive", "==", false));
+
 
   function getAnimals() {
     const animalCollectionRef = query(
@@ -26,7 +40,7 @@ function AnimalList() {
     );
     getDocs(animalCollectionRef).then((response) => {
       const animals = response.docs.map((doc) => ({
-        id: doc.data().id,
+        id: doc.id,
         name: doc.data().animal_name,
         imageUrl: doc.data().animal_imageurl,
         enclosure: doc.data().animal_enclosure,
@@ -37,14 +51,13 @@ function AnimalList() {
 
   return (
     <div class="animalList">
-      <h1>Animal List Page</h1>
-      <h2>{location.state.name}</h2>
+      <h1>{enclosure}</h1>
       <button onClick={() => navigate(-1)}>Back</button>
       {animalData.map((item, index) => {
         return (
           <span
             onClick={() => {
-              console.log(item.name);
+              openAnimalView(item.id);
             }}
             className="list"
             key={index}
