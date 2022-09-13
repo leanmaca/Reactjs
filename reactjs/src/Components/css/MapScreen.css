@@ -1,5 +1,5 @@
 html {
-    zoom: 160%;
+    zoom: 120%;
 }
 body{
     font-family: AbortSignal, Helvetica, sans-serif;
@@ -11,8 +11,8 @@ body{
 }
 .imagebackground {
     background-attachment: fixed;
-    width: 1920;
-    height: 1920;
+    max-width: 854px;
+    height: auto;
     position: absolute;
 }
 
@@ -33,12 +33,24 @@ body{
     display: 'block';
     position: fixed;
     z-index:1;
-    left: 0; 
-    top:0;
+    left: 550px;
+    top: 540px;
     height: 100%;
-    width: 100%;
+    width: 200px;
     overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+}
+
+.elephantModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 570px;
+    top: 590px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
     justify-content: center;
 }
 
@@ -59,6 +71,7 @@ body{
     border-radius: 5%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
     justify-content: end;
+    
 }
 
 .seeAnimalsBtn:hover{
@@ -71,24 +84,484 @@ body{
     padding: 20px;
     width: 70%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
-    
+    border-radius: 5%;
+    animation: anime2 1s infinite ease-in-out alternate;
 }
 
-.button1{
+@keyframes anime{
+    100%{
+        transform:translateY(2px);
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        
+    }
+}
+
+@keyframes anime2{
+    100%{
+        transform:translateY(2px);
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        
+    }
+}
+
+.elephantButton{
     background: rgba(255, 255, 255, 0.164);
     padding: 15px; 
     color: #fff;
     border: 0;
     border-radius: 10px;
     position: absolute;
-    left: 550px;
-    top: 540px;
+    left: 560px;
+    top: 590px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
 }
 
-.button1:hover{
+
+
+.elephantButton:hover{
     background:rgba(51, 51, 51, 0);
     transform: scale(1.1);
+}
+
+.hippopotamusButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 560px;
+    top: 540px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.hippopotamusButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.hippopotamusModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 570px;
+    top: 550px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.aviaryButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 430px;
+    top: 520px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.aviaryButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.aviaryModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 380px;
+    top: 530px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.hyenaButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 600px;
+    top: 440px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.hyenaButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.hyenaModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 535px;
+    top: 450px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.savannaButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 660px;
+    top: 300px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.savannaButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.savannaModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 600px;
+    top: 310px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.apexButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 510px;
+    top: 290px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.apexButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.apexModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 460px;
+    top: 315px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.endemicButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 510px;
+    top: 130px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.endemicButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.endemicModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 460px;
+    top: 155px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.reptileButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 340px;
+    top: 160px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.reptileButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.reptileModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 300px;
+    top: 185px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.museumButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 420px;
+    top: 210px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.museumButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.museumModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 360px;
+    top: 220px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.inreptileButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 230px;
+    top: 240px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.inreptileButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.inreptileModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 170px;
+    top: 265px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.lagoonButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 310px;
+    top: 280px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.lagoonButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.lagoonModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 250px;
+    top: 290px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.islandButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 370px;
+    top: 330px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.islandButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.islandModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 310px;
+    top: 355px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.primatesButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 230px;
+    top: 370px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.primatesButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.primatesModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 180px;
+    top: 380px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.butterflyButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 150px;
+    top: 620px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.butterflyButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.butterflyModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 110px;
+    top: 645px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.botanicalButton{
+    background: rgba(255, 255, 255, 0.164);
+    padding: 15px; 
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 280px;
+    top: 620px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.botanicalButton:hover{
+    background:rgba(51, 51, 51, 0);
+    transform: scale(1.1);
+}
+
+.botanicalModal{
+    display: 'block';
+    position: fixed;
+    z-index:1;
+    left: 230px;
+    top: 645px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
 }
 
 .button2{
@@ -108,22 +581,7 @@ body{
     transform: scale(1.1);
 }
 
-.button3{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
-    position: absolute;
-    left: 200px;
-    top: 500px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
-}
 
-.button3:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
-}
 
 .button4{
     background: rgba(255, 255, 255, 0.164);
