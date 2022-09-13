@@ -182,9 +182,9 @@ export function SavannaModal({ closeModalSavanna }) {
         </div>
         <div class="modaldescription">
           <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
+            The species of animals in a savanna depends upon the geographic
+            location of the biome. The African savannah, the savannah with which
+            most people are familiar, is home to a wide variety of animals.
           </p>
         </div>
         <div class="seeAnimalsBtnDiv">
