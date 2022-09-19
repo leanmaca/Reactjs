@@ -83,6 +83,9 @@ function AnimalView() {
           <small class="infoText">{animalData.behavior}</small>
         </p>
       </div>
+      <div class="quizSection">
+        <button class="quizButton">Take Quiz</button>
+      </div>
     </div>
   );
 }
