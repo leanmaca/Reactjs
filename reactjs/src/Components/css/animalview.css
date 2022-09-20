@@ -1,21 +1,33 @@
+.animalView{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-attachment: fixed;
+}
 .animalInfo{
-    height: 100%;
+    height: 370px;
     border-radius: 15px;
     margin-top: -10px;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    
 }
+
 
 .nameText{
     color: #6DCD4E;
     font-size: 30px;
-    flex: 1;
-
+    flex: auto;
+    margin-bottom: -5px;
+    margin-left: 10px;
 }
 
 .infoSection{
     text-align: justify;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 10px;
+    
 }
 
 .labelText{
@@ -27,14 +39,18 @@
     
 }
 
+.imagecontaineranimalview{
+    
+}
 
 .animalViewImage{
     height: 370px;
     width: 100%;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
 }
 
 .quizSection{
@@ -42,6 +58,9 @@
     justify-content: center;
     align-items: center;
     flex: auto;
+    border-radius: 15px;
+    border-radius: #6DCD4E;
+    
 }
 
 .quizButton{
@@ -55,5 +74,5 @@
     padding: 20px;
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 34%;
 }
