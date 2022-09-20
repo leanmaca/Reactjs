@@ -33,7 +33,7 @@ export function ElephantModal({ closeModalElephant }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -72,7 +72,7 @@ export function HippopotamusModal({ closeModalHippopotamus }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -111,7 +111,7 @@ export function AviaryModal({ closeModalAviary }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -150,7 +150,7 @@ export function HyenaModal({ closeModalHyena }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -189,7 +189,7 @@ export function SavannaModal({ closeModalSavanna }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -228,7 +228,7 @@ export function ApexModal({ closeModalApex }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -267,7 +267,7 @@ export function EndemicModal({ closeModalEndemic }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -306,7 +306,7 @@ export function ReptileModal({ closeModalReptile }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -345,7 +345,7 @@ export function MuseumModal({ closeModalMuseum }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -384,7 +384,7 @@ export function InReptileModal({ closeModalInReptile }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -423,7 +423,7 @@ export function LagoonModal({ closeModalLagoon }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -462,7 +462,7 @@ export function IslandModal({ closeModalIsland }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -501,7 +501,7 @@ export function PrimatesModal({ closeModalPrimates }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -540,7 +540,7 @@ export function ButterflyModal({ closeModalButterfly }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>
@@ -579,7 +579,7 @@ export function BotanicalModal({ closeModalBotanical }) {
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
-            See Animals
+            View Animals
           </button>
         </div>
       </div>

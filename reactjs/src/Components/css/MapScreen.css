@@ -56,7 +56,7 @@ body{
 
 .modaltitle{
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -65,24 +65,27 @@ body{
 }
 
 .seeAnimalsBtn{
-    background-color: rgb(10, 99, 2);
-    color: rgb(255, 255, 255);
-    border-color: rgba(204, 204, 204, 0);
-    border-radius: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #668d3c;
+    border-color: #668d3c;
+    border-radius: 10px;
+    padding: 5px;
+    width: 160px;
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     justify-content: end;
-    
 }
 
 .seeAnimalsBtn:hover{
-    transform: scale(1.05);
+    background-color: #668d3c;
+    color: #FFFFFF;
 }
 
 .firstModal-content{
     background-color: #fff;
     margin: 20% auto;
     padding: 20px;
-    width: 70%;
+    width: 80%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
     border-radius: 5%;
     animation: anime2 1s infinite ease-in-out alternate;
@@ -111,7 +114,7 @@ body{
 }
 
 .elephantButton{
-    background: rgba(255, 255, 255, 0.164);
+    background: #000000;
     padding: 15px; 
     color: #fff;
     border: 0;
@@ -123,15 +126,13 @@ body{
     animation: anime 1s infinite ease-in-out alternate;
 }
 
-
-
 .elephantButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .hippopotamusButton{
-    background: rgba(255, 255, 255, 0.164);
+    background: #000000;
     padding: 15px; 
     color: #fff;
     border: 0;
