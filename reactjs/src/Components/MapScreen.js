@@ -64,9 +64,7 @@ const MapScreen = () => {
           setOpenModalButterfly(false);
           setOpenModalBotanical(false);
         }}
-      >
-        Elephants
-      </button>
+      ></button>
 
       <button
         type="button"
@@ -89,9 +87,7 @@ const MapScreen = () => {
           setOpenModalButterfly(false);
           setOpenModalBotanical(false);
         }}
-      >
-        Hippopotamus
-      </button>
+      ></button>
 
       <button
         type="button"
@@ -114,9 +110,7 @@ const MapScreen = () => {
           setOpenModalButterfly(false);
           setOpenModalBotanical(false);
         }}
-      >
-        Aviary
-      </button>
+      ></button>
 
       <button
         type="button"

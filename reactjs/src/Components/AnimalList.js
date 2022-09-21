@@ -27,11 +27,9 @@ function AnimalList() {
     console.log(enclosure);
   }, [animalData]);
 
-  const queryConstants = []
-
+  const queryConstants = [];
   queryConstants.push(where("animal_enclosure", "==", enclosure));
   queryConstants.push(where("animal_archive", "==", false));
-
 
   function getAnimals() {
     const animalCollectionRef = query(

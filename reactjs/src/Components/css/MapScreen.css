@@ -1,12 +1,13 @@
 html {
     zoom: 120%;
+    
 }
 body{
     font-family: AbortSignal, Helvetica, sans-serif;
     font-size:10px;
     line-height:1;
     background: rgb(255, 255, 255);
- 
+    margin: 0px;
     
 }
 .imagebackground {
@@ -98,6 +99,7 @@ body{
         -moz-transform: translateY(3px);
         -ms-transform: translateY(3px);
         -o-transform: translateY(3px);
+        transform: scale(1.1);
         
     }
 }
@@ -109,20 +111,22 @@ body{
         -moz-transform: translateY(1px);
         -ms-transform: translateY(1px);
         -o-transform: translateY(1px);
+        transform: scale(1.01);
         
     }
 }
 
 .elephantButton{
-    background: #000000;
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
-    left: 560px;
-    top: 590px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
+    left: 590px;
+    top: 600px;
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5);  */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -132,15 +136,16 @@ body{
 }
 
 .hippopotamusButton{
-    background: #000000;
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
-    left: 560px;
-    top: 540px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
+    left: 628px;
+    top: 570px;
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -163,15 +168,16 @@ body{
 }
 
 .aviaryButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
-    left: 430px;
-    top: 520px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
+    left: 445px;
+    top: 560px;
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -194,15 +200,16 @@ body{
 }
 
 .hyenaButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 600px;
     top: 440px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -225,15 +232,16 @@ body{
 }
 
 .savannaButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 660px;
     top: 300px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -256,15 +264,16 @@ body{
 }
 
 .apexButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 510px;
     top: 290px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -287,15 +296,16 @@ body{
 }
 
 .endemicButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 510px;
     top: 130px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -318,15 +328,16 @@ body{
 }
 
 .reptileButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 340px;
     top: 160px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -349,15 +360,16 @@ body{
 }
 
 .museumButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 420px;
     top: 210px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -380,15 +392,16 @@ body{
 }
 
 .inreptileButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 230px;
     top: 240px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -411,15 +424,16 @@ body{
 }
 
 .lagoonButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 310px;
     top: 280px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+   /*  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -442,15 +456,16 @@ body{
 }
 
 .islandButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 370px;
     top: 330px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -473,15 +488,16 @@ body{
 }
 
 .primatesButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 230px;
     top: 370px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -504,15 +520,16 @@ body{
 }
 
 .butterflyButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 150px;
     top: 620px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
@@ -535,15 +552,16 @@ body{
 }
 
 .botanicalButton{
-    background: rgba(255, 255, 255, 0.164);
-    padding: 15px; 
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
+    background-color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
     position: absolute;
+    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
+    border: 1px solid transparent;
     left: 280px;
     top: 620px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+   /*  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
