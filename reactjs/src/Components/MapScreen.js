@@ -43,7 +43,7 @@ const MapScreen = () => {
   return (
     <div>
       <img class="imagebackground" src={map} />
-      <button
+      <button 
         type="button"
         class="elephantButton"
         id="modalBtn1"

@@ -4,6 +4,7 @@
     overflow: hidden;
     background-attachment: fixed;
 }
+
 .animalInfo{
     height: 370px;
     border-radius: 15px;
@@ -13,20 +14,19 @@
     
 }
 
-
 .nameText{
-    color: #6DCD4E;
+    color:  #668d3c;
     font-size: 30px;
     flex: auto;
     margin-bottom: -5px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .infoSection{
     text-align: justify;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     
 }
 
@@ -36,10 +36,6 @@
 
 .infoText{
     font-size: 15px;
-    
-}
-
-.imagecontaineranimalview{
     
 }
 
@@ -54,25 +50,28 @@
 }
 
 .quizSection{
-    background-color: #6DCD4E;
-    justify-content: center;
     align-items: center;
-    flex: auto;
-    border-radius: 15px;
-    border-radius: #6DCD4E;
-    
+    justify-content: center;
 }
 
 .quizButton{
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 150px;
+    align-items: center;
     text-align: center;
     justify-content: center;
-    color: white;
-    background-color: #044700;
-    border-radius: 5px;
-    padding: 20px;
+    color: #668d3c;
+    border: 1px solid;
+    background-color:  #ffffff;
+    border-radius: 10px;
+    padding: 10px;
     position: relative;
     top: 50%;
-    left: 34%;
+    left: 25%;
+}
+
+.quizButton:hover{
+    color: #ffffff;
+    background-color:  #668d3c;
 }
