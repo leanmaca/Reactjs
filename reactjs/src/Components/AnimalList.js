@@ -49,7 +49,7 @@ function AnimalList() {
 
   return (
     <div class="animalList">
-      <h1>{enclosure}</h1>
+      <h1 class="enclosuretitle">{enclosure}</h1>
       <button onClick={() => navigate(-1)}>Back</button>
       {animalData.map((item, index) => {
         return (
@@ -60,9 +60,14 @@ function AnimalList() {
             className="list"
             key={index}
           >
+            
             <div class="imagecontainer">
               <img class="animalimage" src={item.imageUrl} />
+              
+              <h3 class="animalname">{item.name}</h3>
+              
             </div>
+            
             {/* <h3>{item.name}</h3> */}
           </span>
         );
