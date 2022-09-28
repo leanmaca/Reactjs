@@ -18,6 +18,14 @@ function AnimalView() {
   const animalId = location.state.id;
   const [animalData, setAnimalData] = useState([]);
 
+  const openQuiz = (id) => {
+    navigate("/quiz", {
+      state: {
+        id: id,
+      },
+    });
+  };
+
   console.log(animalId);
   useEffect(() => {
     const docRef = doc(db, "animals", animalId);
@@ -82,7 +90,7 @@ function AnimalView() {
           <b class="labelText">Wild Behavior: </b>
           <small class="infoText">{animalData.behavior}</small>
         </p>
-        <div class="quizSection">
+        <div class="quizSection" onClick={() => openQuiz(animalId)}>
           <button class="quizButton">Take Quiz</button>
         </div>
       </div>
