@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { data } from "./Quiz assets/QuizData";
+import "./css/quizScreen.css";
 
 const Quiz = ({ navigation, route }) => {
   const location = useLocation();
@@ -82,12 +83,15 @@ const Quiz = ({ navigation, route }) => {
       <div class="questionContainer">
         {/* Question Counter */}
         <div class="questionCounterContainer">
-          <p>{currentQuestionIndex + 1}</p>
-          <p>/ {allQuestions.length}</p>
+          <p>
+            {currentQuestionIndex + 1} / {allQuestions.length}
+          </p>
         </div>
 
         {/* Question */}
-        <p>{allQuestions[currentQuestionIndex]?.question}</p>
+        <p class="questionText">
+          {allQuestions[currentQuestionIndex]?.question}
+        </p>
       </div>
     );
   };
@@ -107,8 +111,38 @@ const Quiz = ({ navigation, route }) => {
     return (
       <div class="optionsContainer">
         {allQuestions[currentQuestionIndex]?.options.map((option) => (
-          <button onClick={() => validateAnswer(option)}>
-            <p>{option}</p>
+          <button
+            class="optionButton"
+            onClick={() => validateAnswer(option)}
+            disabled={isOptionsDisabled}
+            style={{
+              borderColor:
+                option == correctOption
+                  ? "#668d3c"
+                  : option == currentOptionSelected
+                  ? "#c4391d"
+                  : "#668d3c",
+              backgroundColor:
+                option == correctOption
+                  ? "#668d3c"
+                  : option == currentOptionSelected
+                  ? "#c4391d"
+                  : "#fff",
+            }}
+          >
+            <p
+              class="optionText"
+              style={{
+                color:
+                  option == correctOption
+                    ? "#FFF"
+                    : option == currentOptionSelected
+                    ? "#FFF"
+                    : "#668d3c",
+              }}
+            >
+              {option}
+            </p>
           </button>
         ))}
       </div>
@@ -117,8 +151,8 @@ const Quiz = ({ navigation, route }) => {
   const renderNextButton = () => {
     if (showNextButton) {
       return (
-        <button onClick={handleNext}>
-          <p>Next</p>
+        <button class="nextButton" onClick={handleNext}>
+          <p class="nextText">Next</p>
         </button>
       );
     } else {
@@ -158,28 +192,29 @@ const Quiz = ({ navigation, route }) => {
   }; */
 
   return (
-    <div class="pageContainer">
-      {/* <StatusBar barStyle="light-content" backgroundColor={COLORS.primary} /> */}
-      <div class="pageContainer2">
-        {/* ProgressBar */}
-        {/* {renderProgressBar()} */}
-        <div class="quizSection">
-          {/* Question */}
-          {renderQuestion()}
+    <div class="screen">
+      <div class="pageContainer">
+        {/* <StatusBar barStyle="light-content" backgroundColor={COLORS.primary} /> */}
+        <div class="pageContainer2">
+          {/* ProgressBar */}
+          {/* {renderProgressBar()} */}
+          <div class="quizSection">
+            {/* Question */}
+            {renderQuestion()}
 
-          {/* Options */}
-          {renderOptions()}
+            {/* Options */}
+            {renderOptions()}
 
-          {/* Next Button */}
-          {renderNextButton()}
-        </div>
-        {/* Explanation */}
-        {renderExplanation()}
+            {/* Next Button */}
+            {renderNextButton()}
+          </div>
+          {/* Explanation */}
+          {renderExplanation()}
 
-        {/* Score Modal */}
+          {/* Score Modal */}
 
-        {/* Background Image */}
-        {/* <Image
+          {/* Background Image */}
+          {/* <Image
           source={require("./Quiz assets/images/DottedBG.png")}
           style={{
             width: SIZES.width,
@@ -193,6 +228,7 @@ const Quiz = ({ navigation, route }) => {
           }}
           resizeMode={"contain"}
         /> */}
+        </div>
       </div>
     </div>
   );

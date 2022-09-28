@@ -54,6 +54,9 @@ function AnimalView() {
       {/* <button onClick={() => navigate(-1)}>Back</button> */}
       <div class="imagecontaineranimalview">
         <img class="animalViewImage" src={animalData.imageUrl}></img>
+        <button class="backButton" onClick={() => navigate(-1)}>
+          back
+        </button>
       </div>
 
       <div class="animalInfo">
@@ -64,7 +67,9 @@ function AnimalView() {
         </p>
         <p class="infoSection">
           <b class="labelText">Scientific Name: </b>
-          <small class="infoText">{animalData.sciName}</small>
+          <small class="infoText" style={{ fontStyle: "italic" }}>
+            {animalData.sciName}
+          </small>
         </p>
         <p class="infoSection">
           <b class="labelText">Description: </b>
@@ -91,7 +96,7 @@ function AnimalView() {
           <small class="infoText">{animalData.behavior}</small>
         </p>
         <div class="quizSection" onClick={() => openQuiz(animalId)}>
-          <button class="quizButton">Take Quiz</button>
+          <button class="quizBtn">Take Quiz</button>
         </div>
       </div>
     </div>
