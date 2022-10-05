@@ -17,7 +17,7 @@ function AnimalView() {
   const navigate = useNavigate();
   const animalId = location.state.id;
   const [animalData, setAnimalData] = useState([]);
-
+  const back = "<=";
   const openQuiz = (id) => {
     navigate("/quiz", {
       state: {
@@ -49,13 +49,20 @@ function AnimalView() {
     });
   }, []);
 
+  const backToAnimalList = () => {
+    navigate("/animallist", {
+      state: {
+        name: animalData.enclosure,
+      },
+    });
+  };
   return (
     <div class="animalView">
       {/* <button onClick={() => navigate(-1)}>Back</button> */}
       <div class="imagecontaineranimalview">
         <img class="animalViewImage" src={animalData.imageUrl}></img>
-        <button class="backButton" onClick={() => navigate(-1)}>
-          back
+        <button class="backButton" onClick={() => backToAnimalList()}>
+          {back}
         </button>
       </div>
 

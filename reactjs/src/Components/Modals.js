@@ -1,6 +1,38 @@
 import React from "react";
 import "./css/MapScreen.css";
 import { Route, Link, useNavigate } from "react-router-dom";
+const elephantEnclosureImage = require("./images/elephantenclosure.jpg");
+const hyenaEnclosureImage = require("./images/hyenaenclosure.jpg");
+const apexPredatorsEnclosureImage = require("./images/apexpredatorsenclosure.jpg");
+const aviaryEnclosureImage = require("./images/aviaryenclosure.jpg");
+const savannaEnclosureImage = require("./images/savannaenclosure.jpg");
+const endemicEnclosureImage = require("./images/endemicenclosure.jpg");
+const outReptileEnclosureImage = require("./images/outreptileenclosure.jpg");
+const inReptileEnclosureImage = require("./images/inreptileenclosure.jpg");
+const primatesEnclosureImage = require("./images/primatesenclosure.jpg");
+const butterflyEnclosureImage = require("./images/butterflyenclosure.jpg");
+const botanicalEnclosureImage = require("./images/botanicalenclosure.jpg");
+const map = require("./css/zoomap2.png");
+
+export function quizResultModal() {
+  return (
+    <div class="quizResult" id="modalId">
+      <div class="firstModal-content">
+        <span class="closeBtn" id="closeBtn">
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Elephants</p>
+        </div>
+        <div class="modaldescription"></div>
+        <div class="seeAnimalsBtnDiv">
+          <button class="retryQuizButton">Retry Quiz</button>
+          <button class="retryQuizButton">Back to Animal Page</button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function ElephantModal({ closeModalElephant }) {
   const navigate = useNavigate();
@@ -24,12 +56,12 @@ export function ElephantModal({ closeModalElephant }) {
         <div class="modaltitle">
           <p>Elephants</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={elephantEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -63,12 +95,12 @@ export function HippopotamusModal({ closeModalHippopotamus }) {
         <div class="modaltitle">
           <p>Hippopotamus</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={elephantEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -102,12 +134,12 @@ export function AviaryModal({ closeModalAviary }) {
         <div class="modaltitle">
           <p>Aviary</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={aviaryEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -141,12 +173,12 @@ export function HyenaModal({ closeModalHyena }) {
         <div class="modaltitle">
           <p>Hyena</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={hyenaEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -180,12 +212,12 @@ export function SavannaModal({ closeModalSavanna }) {
         <div class="modaltitle">
           <p>Savanna</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            The species of animals in a savanna depends upon the geographic
-            location of the biome. The African savannah, the savannah with which
-            most people are familiar, is home to a wide variety of animals.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={savannaEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -219,12 +251,12 @@ export function ApexModal({ closeModalApex }) {
         <div class="modaltitle">
           <p>Apex Predators</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={apexPredatorsEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -258,12 +290,12 @@ export function EndemicModal({ closeModalEndemic }) {
         <div class="modaltitle">
           <p>Philippine Endemic</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={endemicEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -297,12 +329,12 @@ export function ReptileModal({ closeModalReptile }) {
         <div class="modaltitle">
           <p>Outdoor Reptile</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -336,12 +368,12 @@ export function MuseumModal({ closeModalMuseum }) {
         <div class="modaltitle">
           <p>Museum</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -375,12 +407,12 @@ export function InReptileModal({ closeModalInReptile }) {
         <div class="modaltitle">
           <p>Indoor Reptile</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={inReptileEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -414,12 +446,12 @@ export function LagoonModal({ closeModalLagoon }) {
         <div class="modaltitle">
           <p>Lagoon</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={elephantEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -453,12 +485,12 @@ export function IslandModal({ closeModalIsland }) {
         <div class="modaltitle">
           <p>Center Island</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={elephantEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -492,12 +524,12 @@ export function PrimatesModal({ closeModalPrimates }) {
         <div class="modaltitle">
           <p>Primates</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={primatesEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -531,12 +563,12 @@ export function ButterflyModal({ closeModalButterfly }) {
         <div class="modaltitle">
           <p>Butterfly Garden</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={butterflyEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
@@ -570,12 +602,12 @@ export function BotanicalModal({ closeModalBotanical }) {
         <div class="modaltitle">
           <p>Botanical Museum</p>
         </div>
-        <div class="modaldescription">
-          <p>
-            elephant, the largest living land animal, characterized by its long
-            trunk (elongated upper lip and nose), columnar legs, and huge head
-            with temporal glands and wide, flat ears.
-          </p>
+        <div class="enclosureImageContainer">
+          <img
+            class="enclosureImage"
+            src={botanicalEnclosureImage}
+            alt="elephants"
+          />
         </div>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>

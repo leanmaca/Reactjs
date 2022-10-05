@@ -1,5 +1,5 @@
 html {
-    zoom: 120%;
+    zoom: 140%;
     
 }
 body{
@@ -59,10 +59,30 @@ body{
     text-align: center;
     font-size: 16px;
     font-weight: bold;
+    margin-top: -5px;
 }
 
 .modaldescription{
     text-align: justify;
+}
+
+.enclosureImageContainer{
+    height: 100px;
+    width: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: content;
+
+}
+
+.enclosureImage{
+    height: 90%;
+    width: 100%;
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    
 }
 
 .seeAnimalsBtn{
@@ -112,7 +132,7 @@ body{
         -moz-transform: translateY(1px);
         -ms-transform: translateY(1px);
         -o-transform: translateY(1px);
-        transform: scale(1.01);
+        /* transform: scale(1.01); */
         
     }
 }
@@ -151,8 +171,8 @@ body{
 }
 
 .hippopotamusButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .hippopotamusModal{
@@ -183,8 +203,8 @@ body{
 }
 
 .aviaryButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .aviaryModal{
@@ -215,8 +235,8 @@ body{
 }
 
 .hyenaButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .hyenaModal{
@@ -247,8 +267,8 @@ body{
 }
 
 .savannaButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .savannaModal{
@@ -279,8 +299,8 @@ body{
 }
 
 .apexButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .apexModal{
@@ -311,8 +331,8 @@ body{
 }
 
 .endemicButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .endemicModal{
@@ -343,8 +363,8 @@ body{
 }
 
 .reptileButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .reptileModal{
@@ -375,8 +395,8 @@ body{
 }
 
 .museumButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .museumModal{
@@ -407,8 +427,8 @@ body{
 }
 
 .inreptileButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .inreptileModal{
@@ -439,8 +459,8 @@ body{
 }
 
 .lagoonButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .lagoonModal{
@@ -471,8 +491,8 @@ body{
 }
 
 .islandButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .islandModal{
@@ -503,8 +523,8 @@ body{
 }
 
 .primatesButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .primatesModal{
@@ -535,8 +555,8 @@ body{
 }
 
 .butterflyButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .butterflyModal{
@@ -567,8 +587,8 @@ body{
 }
 
 .botanicalButton:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 .botanicalModal{
@@ -597,8 +617,8 @@ body{
 }
 
 .button2:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 
@@ -616,8 +636,8 @@ body{
 }
 
 .button4:hover{
-    background:rgba(51, 51, 51, 0);
-    transform: scale(1.1);
+    background:#FFFFFF;
+    color:#000000;
 }
 
 

@@ -191,6 +191,44 @@ const Quiz = ({ navigation, route }) => {
     );
   }; */
 
+  const backToAnimalPage = () => {
+    navigate("/animalview", {
+      state: {
+        id: animalId,
+      },
+    });
+  };
+
+  const QuizResultModal = () => {
+    return (
+      <div class="quizResult" id="modalId">
+        <div class="firstModal-content">
+          <span class="closeBtn" id="closeBtn">
+            &times;
+          </span>
+          <div class="modaltitle">
+            <p>Elephants</p>
+          </div>
+          <div class="modaldescription">
+            <p>
+              elephant, the largest living land animal, characterized by its
+              long trunk (elongated upper lip and nose), columnar legs, and huge
+              head with temporal glands and wide, flat ears.
+            </p>
+          </div>
+          <div class="seeAnimalsBtnDiv">
+            <button class="retryQuizButton" onClick={restartQuiz}>
+              Retry Quiz
+            </button>
+            <button class="retryQuizButton" onClick={backToAnimalPage}>
+              Back to Animal Page
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div class="screen">
       <div class="pageContainer">
@@ -201,18 +239,19 @@ const Quiz = ({ navigation, route }) => {
           <div class="quizSection">
             {/* Question */}
             {renderQuestion()}
+            <div class="optionsContainer">
+              {/* Options */}
+              {renderOptions()}
 
-            {/* Options */}
-            {renderOptions()}
-
-            {/* Next Button */}
-            {renderNextButton()}
+              {/* Next Button */}
+              {renderNextButton()}
+            </div>
           </div>
           {/* Explanation */}
           {renderExplanation()}
 
           {/* Score Modal */}
-
+          {showScoreModal && <QuizResultModal />}
           {/* Background Image */}
           {/* <Image
           source={require("./Quiz assets/images/DottedBG.png")}

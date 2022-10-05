@@ -3,6 +3,8 @@
     flex-direction: column;
     overflow: hidden;
     background-attachment: fixed;
+    flex: content;
+    width: 100%;
 }
 
 .animalInfo{
@@ -81,4 +83,8 @@
     position: absolute;
     top: 10px;
     left: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0);
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
 }
