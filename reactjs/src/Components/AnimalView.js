@@ -11,6 +11,8 @@ import {
   getDoc,
 } from "firebase/firestore";
 import "./css/animalview.css";
+import { Howl, Howler } from "howler";
+import { FaVolumeUp, FaArrowLeft } from "react-icons/fa";
 
 function AnimalView() {
   const location = useLocation();
@@ -44,10 +46,13 @@ function AnimalView() {
         distribution: doc.data().animal_distribution,
         nutrition: doc.data().animal_nutrition,
         imageUrl: doc.data().animal_imageurl,
+        soundUrl: doc.data().animal_sound,
       };
       setAnimalData(animalListReference);
     });
   }, []);
+
+  const audio = animalData.soundUrl;
 
   const backToAnimalList = () => {
     navigate("/animallist", {
@@ -56,18 +61,61 @@ function AnimalView() {
       },
     });
   };
+
+  const audioClips = [{ sound: animalData.soundUrl, label: "sound" }];
+
+  const SoundPlay = (src) => {
+    console.log(animalData.soundUrl);
+    const sound = new Howl({
+      src,
+      html5: true,
+    });
+    sound.play();
+  };
+
+  const ButtonSound = () => {
+    audioClips.map((soundObj, index) => (
+      <button key={index} onClick={() => SoundPlay(soundObj.sound)}>
+        sound
+      </button>
+    ));
+  };
+
+  Howler.volume(0.5);
+
+  const Title = () => {
+    if (animalData.soundUrl != null) {
+      return (
+        <h1 class="nameText">
+          {animalData.name}
+          {audioClips.map((soundObj, index) => (
+            <button
+              class="soundButton"
+              key={index}
+              onClick={() => SoundPlay(soundObj.sound)}
+            >
+              <FaVolumeUp />
+            </button>
+          ))}
+        </h1>
+      );
+    } else {
+      return <h1 class="nameText">{animalData.name}</h1>;
+    }
+  };
+
   return (
     <div class="animalView">
       {/* <button onClick={() => navigate(-1)}>Back</button> */}
       <div class="imagecontaineranimalview">
         <img class="animalViewImage" src={animalData.imageUrl}></img>
         <button class="backButton" onClick={() => backToAnimalList()}>
-          {back}
+          <FaArrowLeft />
         </button>
       </div>
 
       <div class="animalInfo">
-        <h1 class="nameText">{animalData.name}</h1>
+        <Title />
         <p class="infoSection">
           <b class="labelText">Enclosure: </b>
           <small class="infoText">{animalData.enclosure}</small>
