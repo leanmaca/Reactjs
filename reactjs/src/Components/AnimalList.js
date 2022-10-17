@@ -66,7 +66,6 @@ function AnimalList() {
               <h3 class="animalname">{item.name}</h3>
             </div>
 
-            {/* <h3>{item.name}</h3> */}
           </span>
         );
       })}

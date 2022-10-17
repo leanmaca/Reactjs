@@ -63,6 +63,7 @@ export function ElephantModal({ closeModalElephant }) {
             alt="elephants"
           />
         </div>
+        <br/>  <br/>
         <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openAnimalList}>
             View Animals

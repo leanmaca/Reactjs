@@ -67,8 +67,8 @@ body{
 }
 
 .enclosureImageContainer{
-    height: 100px;
-    width: 150px;
+    /* height: 150px;
+    width: 150px; */
     align-items: center;
     flex-wrap: wrap;
     flex: content;
@@ -76,13 +76,18 @@ body{
 }
 
 .enclosureImage{
-    height: 90%;
+    height: 100%;
     width: 100%;
     align-self: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     
+}
+
+.seeAnimalsBtnDiv{
+    margin-top: 10px;
 }
 
 .seeAnimalsBtn{
@@ -91,7 +96,7 @@ body{
     color: #668d3c;
     border: 1px solid;
     border-color: #668d3c;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
     width: 160px;
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
