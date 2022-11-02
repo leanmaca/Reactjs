@@ -122,7 +122,7 @@ body{
 
 @keyframes anime{
     100%{
-        transform:translateY(5px);
+        transform:translateY(8px);
         -webkit-transform: translateY(4);
         -moz-transform: translateY(4);
         -ms-transform: translateY(4);
@@ -140,6 +140,14 @@ body{
         -ms-transform: translateY(2px);
         -o-transform: translateY(2px);
         /* transform: scale(1.01); */
+        
+    }
+}
+
+@keyframes anime3{
+    100%{
+        
+        transform: scale(0.8);
         
     }
 }
@@ -174,8 +182,11 @@ body{
     border-radius: 100%;
     position:relative;
     left: 15px;
+    margin-top: 5px;
     filter: blur(2px);
   -webkit-filter: blur(2px);
+  z-index: 0;
+  animation: anime3 1s infinite ease-in-out alternate;
     
 }
 
