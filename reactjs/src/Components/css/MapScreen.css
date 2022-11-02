@@ -48,7 +48,7 @@ body{
     display: 'block';
     position: fixed;
     z-index:1;
-    left: 570px;
+    left: 510px;
     top: 590px;
     height: 100%;
     width: 200px;
@@ -122,72 +122,98 @@ body{
 
 @keyframes anime{
     100%{
-        transform:translateY(3px);
-        -webkit-transform: translateY(3px);
-        -moz-transform: translateY(3px);
-        -ms-transform: translateY(3px);
-        -o-transform: translateY(3px);
-        transform: scale(1.1);
+        transform:translateY(5px);
+        -webkit-transform: translateY(4);
+        -moz-transform: translateY(4);
+        -ms-transform: translateY(4);
+        -o-transform: translateY(4);
+        /* transform: scale(4); */
         
     }
 }
 
 @keyframes anime2{
     100%{
-        transform:translateY(1px);
-        -webkit-transform: translateY(1px);
-        -moz-transform: translateY(1px);
-        -ms-transform: translateY(1px);
-        -o-transform: translateY(1px);
+        transform:translateY(2px);
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
         /* transform: scale(1.01); */
         
     }
 }
 
 .elephantButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 590px;
-    top: 600px;
-    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5);  */
+    border-color: transparent;
+    
+    /*  */
+    color:#ff0000;
+    
+  
+    
+    
+    
     animation: anime 1s infinite ease-in-out alternate;
 }
 
+.buttonContainerElephant{
+    position: absolute;
+    left: 580px;
+    top: 580px;
+    
+}
+
+.buttonShadow{
+    height: 10px;
+    width: 20px;
+    background: #00000096;
+    border-radius: 100%;
+    position:relative;
+    left: 15px;
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+    
+}
+
 .elephantButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+   background-color: transparent;
+   color:#ff0000;
+}
+
+.buttonContainerHippopotamus{
+    position: absolute;
+    left: 610px;
+    top: 535px;
 }
 
 .hippopotamusButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 628px;
-    top: 570px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .hippopotamusButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+    color:#ff0000;
 }
 
 .hippopotamusModal{
     display: 'block';
     position: fixed;
     z-index:1;
-    left: 570px;
-    top: 550px;
+    left: 540px;
+    top: 532px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -195,31 +221,36 @@ body{
     justify-content: center;
 }
 
+.buttonContainerAviary{
+    position: absolute;
+    left: 435px;
+    top: 530px;
+}
+
 .aviaryButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 445px;
-    top: 560px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .aviaryButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .aviaryModal{
     display: 'block';
     position: fixed;
     z-index:1;
-    left: 380px;
-    top: 530px;
+    left: 360px;
+    top: 532px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -227,23 +258,28 @@ body{
     justify-content: center;
 }
 
+.buttonContainerHyena{
+    position: absolute;
+    left: 600px;
+    top: 410px;
+}
+
 .hyenaButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 600px;
-    top: 440px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .hyenaButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .hyenaModal{
@@ -259,23 +295,28 @@ body{
     justify-content: center;
 }
 
+.buttonContainerSavanna{
+    position: absolute;
+    left: 660px;
+    top: 250px;
+}
+
 .savannaButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 660px;
-    top: 300px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .savannaButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .savannaModal{
@@ -291,23 +332,28 @@ body{
     justify-content: center;
 }
 
+.buttonContainerApex{
+    position: absolute;
+    left: 520px;
+    top: 270px;
+}
+
 .apexButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 510px;
-    top: 290px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .apexButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+    color:#ff0000;
 }
 
 .apexModal{
@@ -323,23 +369,28 @@ body{
     justify-content: center;
 }
 
+.buttonContainerEndemic{
+    position: absolute;
+    left: 510px;
+    top: 120px;
+}
+
 .endemicButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 510px;
-    top: 130px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .endemicButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .endemicModal{
@@ -355,23 +406,28 @@ body{
     justify-content: center;
 }
 
+.buttonContainerOutReptile{
+    position: absolute;
+    left: 360px;
+    top: 160px;
+}
+
 .reptileButton{
-    background-color: #ffffff;
+    background-color: transparent;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
-    left: 340px;
-    top: 160px;
+    border-color: transparent;
+   
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .reptileButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .reptileModal{
@@ -387,23 +443,28 @@ body{
     justify-content: center;
 }
 
-.museumButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerMuseum{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 420px;
     top: 210px;
+}
+
+.museumButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .museumButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .museumModal{
@@ -419,23 +480,28 @@ body{
     justify-content: center;
 }
 
-.inreptileButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerInReptile{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 230px;
     top: 240px;
+}
+
+.inreptileButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .inreptileButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .inreptileModal{
@@ -451,23 +517,28 @@ body{
     justify-content: center;
 }
 
-.lagoonButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerLagoon{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 310px;
     top: 280px;
+}
+
+.lagoonButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+   
+    
+    color:#ff0000;
+    
    /*  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .lagoonButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .lagoonModal{
@@ -483,23 +554,28 @@ body{
     justify-content: center;
 }
 
-.islandButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerIsland{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 370px;
     top: 330px;
+}
+
+.islandButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .islandButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .islandModal{
@@ -515,23 +591,28 @@ body{
     justify-content: center;
 }
 
-.primatesButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerPrimates{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 230px;
     top: 370px;
+}
+
+.primatesButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .primatesButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .primatesModal{
@@ -547,23 +628,28 @@ body{
     justify-content: center;
 }
 
-.butterflyButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerButterfly{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 150px;
     top: 620px;
+}
+
+.butterflyButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
     /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .butterflyButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .butterflyModal{
@@ -579,23 +665,28 @@ body{
     justify-content: center;
 }
 
-.botanicalButton{
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
+.buttonContainerBotanical{
     position: absolute;
-    box-shadow: 0 0 0 2px #000, inset 0 0 0 1px rgb(0, 0, 0);
-    border: 1px solid transparent;
     left: 280px;
     top: 620px;
+}
+
+.botanicalButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
    /*  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
     animation: anime 1s infinite ease-in-out alternate;
 }
 
 .botanicalButton:hover{
-    background:#FFFFFF;
-    color:#000000;
+    background-color: transparent;
+   color:#ff0000;
 }
 
 .botanicalModal{

@@ -18,7 +18,10 @@ import {
   BotanicalModal,
 } from "./Modals";
 import { useState } from "react";
-const map = require("./css/zoomap2.png");
+import { FaVolumeUp, FaArrowLeft, FaMapMarkerAlt } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdLocationPin } from "react-icons/md";
+const map = require("./css/zoomap3.png");
 
 const MapScreen = () => {
   const [openModalElephant, setOpenModalElephant] = useState(false);
@@ -40,378 +43,537 @@ const MapScreen = () => {
   const [openModal3, setOpenModal3] = useState(false);
   const [openModal4, setOpenModal4] = useState(false);
 
+  const pinSize = 35;
+
   return (
     <div>
       <img class="imagebackground" src={map} />
-      <button 
-        type="button"
-        class="elephantButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(true);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      ></button>
 
-      <button
-        type="button"
-        class="hippopotamusButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(true);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      ></button>
+      <div class="buttonContainerElephant">
+        <button
+          type="button"
+          class="elephantButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(true);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
 
-      <button
-        type="button"
-        class="aviaryButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(true);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      ></button>
-
-      <button
-        type="button"
-        class="hyenaButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(true);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Hyena
-      </button>
-
-      <button
-        type="button"
-        class="savannaButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(true);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Savanna
-      </button>
-
-      <button
-        type="button"
-        class="apexButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(true);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Apex Predators
-      </button>
-
-      <button
-        type="button"
-        class="endemicButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(true);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Philippine Endemic
-      </button>
-
-      <button
-        type="button"
-        class="reptileButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(true);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Outdoor Reptile
-      </button>
-
-      <button
-        type="button"
-        class="museumButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(true);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Museum
-      </button>
-
-      <button
-        type="button"
-        class="inreptileButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(true);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Indoor Reptile
-      </button>
-
-      <button
-        type="button"
-        class="lagoonButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(true);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Lagoon
-      </button>
-
-      <button
-        type="button"
-        class="islandButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(true);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Center Island
-      </button>
-
-      <button
-        type="button"
-        class="primatesButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(true);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Primates
-      </button>
-
-      <button
-        type="button"
-        class="butterflyButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(true);
-          setOpenModalBotanical(false);
-        }}
-      >
-        Butterfly Garden
-      </button>
-
-      <button
-        type="button"
-        class="botanicalButton"
-        id="modalBtn1"
-        onClick={() => {
-          setOpenModalElephant(false);
-          setOpenModalHippopotamus(false);
-          setOpenModalAviary(false);
-          setOpenModalHyena(false);
-          setOpenModalSavanna(false);
-          setOpenModalApex(false);
-          setOpenModalEndemic(false);
-          setOpenModalReptile(false);
-          setOpenModalMuseum(false);
-          setOpenModalInReptile(false);
-          setOpenModalLagoon(false);
-          setOpenModalIsland(false);
-          setOpenModalPrimates(false);
-          setOpenModalButterfly(false);
-          setOpenModalBotanical(true);
-        }}
-      >
-        Botanical Museum
-      </button>
-
+      <div class="buttonContainerHippopotamus">
+        <button
+          type="button"
+          class="hippopotamusButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(true);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerAviary">
+        <button
+          type="button"
+          class="aviaryButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(true);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerHyena">
+        <button
+          type="button"
+          class="hyenaButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(true);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerSavanna">
+        <button
+          type="button"
+          class="savannaButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(true);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerApex">
+        <button
+          type="button"
+          class="apexButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(true);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerEndemic">
+        <button
+          type="button"
+          class="endemicButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(true);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerOutReptile">
+        <button
+          type="button"
+          class="reptileButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(true);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerMuseum">
+        <button
+          type="button"
+          class="museumButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(true);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerInReptile">
+        <button
+          type="button"
+          class="inreptileButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(true);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerLagoon">
+        <button
+          type="button"
+          class="lagoonButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(true);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerIsland">
+        <button
+          type="button"
+          class="islandButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(true);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerPrimates">
+        <button
+          type="button"
+          class="primatesButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(true);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerButterfly">
+        <button
+          type="button"
+          class="butterflyButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(true);
+            setOpenModalBotanical(false);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
+      <div class="buttonContainerBotanical">
+        <button
+          type="button"
+          class="botanicalButton"
+          id="modalBtn1"
+          onClick={() => {
+            setOpenModalElephant(false);
+            setOpenModalHippopotamus(false);
+            setOpenModalAviary(false);
+            setOpenModalHyena(false);
+            setOpenModalSavanna(false);
+            setOpenModalApex(false);
+            setOpenModalEndemic(false);
+            setOpenModalReptile(false);
+            setOpenModalMuseum(false);
+            setOpenModalInReptile(false);
+            setOpenModalLagoon(false);
+            setOpenModalIsland(false);
+            setOpenModalPrimates(false);
+            setOpenModalButterfly(false);
+            setOpenModalBotanical(true);
+          }}
+        >
+          <FaMapMarkerAlt
+            size={pinSize}
+            style={{
+              color: "#668d3c",
+              stroke: "black",
+              strokeWidth: "8",
+              //borderColor: "transparent",
+            }}
+          />
+        </button>
+        <div class="buttonShadow"></div>
+      </div>
       {openModalElephant && (
         <ElephantModal closeModalElephant={setOpenModalElephant} />
       )}
