@@ -75,9 +75,9 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
-              strokeWidth: "8",
+              strokeWidth: "10",
             }}
           />
         </button>
@@ -110,7 +110,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -145,7 +145,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -180,7 +180,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -215,7 +215,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -250,7 +250,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -285,7 +285,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -320,7 +320,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -355,7 +355,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -390,7 +390,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -425,7 +425,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -460,7 +460,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -495,7 +495,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -530,7 +530,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",
@@ -565,7 +565,7 @@ const MapScreen = () => {
           <FaMapMarkerAlt
             size={pinSize}
             style={{
-              color: "#145da0",  
+              color: "#145da0",
               stroke: "white",
               strokeWidth: "8",
               //borderColor: "transparent",

@@ -192,7 +192,7 @@ body{
 
 .elephantButton:hover{
    background-color: transparent;
-   color:#ff0000;
+   transform: scale(1.2);
 }
 
 .buttonContainerHippopotamus{
@@ -216,7 +216,7 @@ body{
 
 .hippopotamusButton:hover{
     background-color: transparent;
-    color:#ff0000;
+   transform: scale(1.2);
 }
 
 .hippopotamusModal{
@@ -252,8 +252,8 @@ body{
 }
 
 .aviaryButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .aviaryModal{
@@ -289,8 +289,8 @@ body{
 }
 
 .hyenaButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .hyenaModal{
@@ -326,8 +326,8 @@ body{
 }
 
 .savannaButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .savannaModal{
@@ -364,7 +364,7 @@ body{
 
 .apexButton:hover{
     background-color: transparent;
-    color:#ff0000;
+   transform: scale(1.2);
 }
 
 .apexModal{
@@ -400,8 +400,8 @@ body{
 }
 
 .endemicButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .endemicModal{
@@ -437,8 +437,8 @@ body{
 }
 
 .reptileButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .reptileModal{
@@ -474,8 +474,8 @@ body{
 }
 
 .museumButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .museumModal{
@@ -511,8 +511,8 @@ body{
 }
 
 .inreptileButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .inreptileModal{
@@ -548,8 +548,8 @@ body{
 }
 
 .lagoonButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .lagoonModal{
@@ -585,8 +585,8 @@ body{
 }
 
 .islandButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .islandModal{
@@ -622,8 +622,8 @@ body{
 }
 
 .primatesButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .primatesModal{
@@ -659,8 +659,8 @@ body{
 }
 
 .butterflyButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .butterflyModal{
@@ -696,8 +696,8 @@ body{
 }
 
 .botanicalButton:hover{
-    background-color: transparent;
-   color:#ff0000;
+   background-color: transparent;
+   transform: scale(1.2);
 }
 
 .botanicalModal{
