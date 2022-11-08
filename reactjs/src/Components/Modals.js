@@ -14,37 +14,17 @@ const butterflyEnclosureImage = require("./images/butterflyenclosure.jpg");
 const botanicalEnclosureImage = require("./images/botanicalenclosure.jpg");
 const map = require("./css/zoomap2.png");
 
-export function quizResultModal() {
-  return (
-    <div class="quizResult" id="modalId">
-      <div class="firstModal-content">
-        <span class="closeBtn" id="closeBtn">
-          &times;
-        </span>
-        <div class="modaltitle">
-          <p>Elephants</p>
-        </div>
-        <div class="modaldescription"></div>
-        <div class="seeAnimalsBtnDiv">
-          <button class="retryQuizButton">Retry Quiz</button>
-          <button class="retryQuizButton">Back to Animal Page</button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function ElephantModal({ closeModalElephant }) {
   const navigate = useNavigate();
   const openAnimalList = () => {
     navigate("/animallist", {
       state: {
-        name: "Elephants",
+        name: "Elephant",
       },
     });
   };
   const openReactNative = () => {
-    window.ReactNativeWebView.postMessage("Elephants");
+    window.ReactNativeWebView.postMessage("Elephant");
   };
   return (
     <div class="elephantModal" id="modalId">
@@ -57,7 +37,7 @@ export function ElephantModal({ closeModalElephant }) {
           &times;
         </span>
         <div class="modaltitle">
-          <p>Elephants</p>
+          <p>Elephant</p>
         </div>
         <div class="enclosureImageContainer">
           <img
@@ -339,7 +319,7 @@ export function ReptileModal({ closeModalReptile }) {
     });
   };
   const openReactNative = () => {
-    window.ReactNativeWebView.postMessage("Outdoor Reptile");
+    window.ReactNativeWebView.postMessage("Outdoor Reptiles");
   };
   return (
     <div class="reptileModal" id="modalId">
@@ -352,7 +332,7 @@ export function ReptileModal({ closeModalReptile }) {
           &times;
         </span>
         <div class="modaltitle">
-          <p>Outdoor Reptile</p>
+          <p>Outdoor Reptiles</p>
         </div>
         <div class="enclosureImageContainer">
           <img
@@ -418,12 +398,12 @@ export function InReptileModal({ closeModalInReptile }) {
   const openAnimalList = () => {
     navigate("/animallist", {
       state: {
-        name: "Indoor Reptile",
+        name: "Indoor Reptiles",
       },
     });
   };
   const openReactNative = () => {
-    window.ReactNativeWebView.postMessage("Indoor Reptile");
+    window.ReactNativeWebView.postMessage("Indoor Reptiles");
   };
   return (
     <div class="inreptileModal" id="modalId">
@@ -436,7 +416,7 @@ export function InReptileModal({ closeModalInReptile }) {
           &times;
         </span>
         <div class="modaltitle">
-          <p>Indoor Reptile</p>
+          <p>Indoor Reptiles</p>
         </div>
         <div class="enclosureImageContainer">
           <img
@@ -487,11 +467,6 @@ export function LagoonModal({ closeModalLagoon }) {
             alt="elephants"
           />
         </div>
-        <div class="seeAnimalsBtnDiv">
-          <button class="seeAnimalsBtn" onClick={openReactNative}>
-            View Animals
-          </button>
-        </div>
       </div>
     </div>
   );
@@ -528,11 +503,6 @@ export function IslandModal({ closeModalIsland }) {
             src={elephantEnclosureImage}
             alt="elephants"
           />
-        </div>
-        <div class="seeAnimalsBtnDiv">
-          <button class="seeAnimalsBtn" onClick={openReactNative}>
-            View Animals
-          </button>
         </div>
       </div>
     </div>
@@ -654,11 +624,6 @@ export function BotanicalModal({ closeModalBotanical }) {
             src={botanicalEnclosureImage}
             alt="elephants"
           />
-        </div>
-        <div class="seeAnimalsBtnDiv">
-          <button class="seeAnimalsBtn" onClick={openReactNative}>
-            View Animals
-          </button>
         </div>
       </div>
     </div>
