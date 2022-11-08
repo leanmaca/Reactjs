@@ -383,11 +383,6 @@ export function MuseumModal({ closeModalMuseum }) {
             alt="elephants"
           />
         </div>
-        <div class="seeAnimalsBtnDiv">
-          <button class="seeAnimalsBtn" onClick={openReactNative}>
-            View Animals
-          </button>
-        </div>
       </div>
     </div>
   );
