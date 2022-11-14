@@ -21,7 +21,7 @@ import { useState } from "react";
 import { FaVolumeUp, FaArrowLeft, FaMapMarkerAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MdLocationPin } from "react-icons/md";
-const map = require("./css/zoomap3.png");
+const map = require("./css/zoomap4.png");
 
 const MapScreen = () => {
   const [openModalElephant, setOpenModalElephant] = useState(false);
@@ -399,7 +399,7 @@ const MapScreen = () => {
         </button>
         <div class="buttonShadow"></div>
       </div>
-      <div class="buttonContainerLagoon">
+      {/* <div class="buttonContainerLagoon">
         <button
           type="button"
           class="lagoonButton"
@@ -468,7 +468,7 @@ const MapScreen = () => {
           />
         </button>
         <div class="buttonShadow"></div>
-      </div>
+      </div> */}
       <div class="buttonContainerPrimates">
         <button
           type="button"
