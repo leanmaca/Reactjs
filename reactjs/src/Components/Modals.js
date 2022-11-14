@@ -12,7 +12,6 @@ const inReptileEnclosureImage = require("./images/inreptileenclosure.jpg");
 const primatesEnclosureImage = require("./images/primatesenclosure.jpg");
 const butterflyEnclosureImage = require("./images/butterflyenclosure.jpg");
 const botanicalEnclosureImage = require("./images/botanicalenclosure.jpg");
-const map = require("./css/zoomap2.png");
 
 export function ElephantModal({ closeModalElephant }) {
   const navigate = useNavigate();
@@ -578,11 +577,11 @@ export function ButterflyModal({ closeModalButterfly }) {
             alt="elephants"
           />
         </div>
-        <div class="seeAnimalsBtnDiv">
+        {/* <div class="seeAnimalsBtnDiv">
           <button class="seeAnimalsBtn" onClick={openReactNative}>
             View Animals
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
