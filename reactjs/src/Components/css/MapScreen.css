@@ -1,6 +1,7 @@
 html {
     zoom: 100%;
     background-color: #668d3c;
+    height: 900px;
     
 }
 body{
@@ -8,7 +9,7 @@ body{
     font-size:10px;
     line-height:1;
     /* background: rgb(255, 255, 255); */
-    
+    max-height: fit-content;
     margin: 0px;
     
 }
