@@ -455,11 +455,37 @@ export function LagoonModal({ closeModalLagoon }) {
           <p>Lagoon</p>
         </div>
         <div class="enclosureImageContainer">
-          <img
+          {/* <img
             class="enclosureImage"
             src={elephantEnclosureImage}
             alt="elephants"
-          />
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Lagoon2Modal({ closeModalLagoon2 }) {
+  return (
+    <div class="lagoon2Modal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalLagoon2(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Lagoon</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={elephantEnclosureImage}
+            alt="elephants"
+          /> */}
         </div>
       </div>
     </div>
@@ -618,6 +644,324 @@ export function BotanicalModal({ closeModalBotanical }) {
             src={botanicalEnclosureImage}
             alt="elephants"
           />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function FountainModal({ closeModalFountain }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="fountainModal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalFountain(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Interactive Fountain</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function ParkModal({ closeModalPark }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="parkModal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalPark(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Children's Park</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function FoodModal({ closeModalFood }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="foodModal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalFood(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Food Court</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Food2Modal({ closeModalFood2 }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="food2Modal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalFood2(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Food Court</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function TicketModal({ closeModalTicket }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="ticketModal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalTicket(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Entrance & Ticket Booth</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function ParkingModal({ closeModalParking }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="parkingModal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalParking(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Parking Area</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Parking2Modal({ closeModalParking2 }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="parking2Modal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalParking2(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Parking Area</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function EModal({ closeModalE }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="eModal" id="modalId">
+      <div class="firstModal-content">
+        <span class="closeBtn" id="closeBtn" onClick={() => closeModalE(false)}>
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Material Recovery Facility</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function FModal({ closeModalF }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="fModal" id="modalId">
+      <div class="firstModal-content">
+        <span class="closeBtn" id="closeBtn" onClick={() => closeModalF(false)}>
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Veterinary Hospital</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function GModal({ closeModalG }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="gModal" id="modalId">
+      <div class="firstModal-content">
+        <span class="closeBtn" id="closeBtn" onClick={() => closeModalG(false)}>
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Administration Building</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+export function CModal({ closeModalC }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="cModal" id="modalId">
+      <div class="firstModal-content">
+        <span class="closeBtn" id="closeBtn" onClick={() => closeModalC(false)}>
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Shop</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+export function C2Modal({ closeModalC2 }) {
+  const navigate = useNavigate();
+
+  return (
+    <div class="c2Modal" id="modalId">
+      <div class="firstModal-content">
+        <span
+          class="closeBtn"
+          id="closeBtn"
+          onClick={() => closeModalC2(false)}
+        >
+          &times;
+        </span>
+        <div class="modaltitle">
+          <p>Shop</p>
+        </div>
+        <div class="enclosureImageContainer">
+          {/* <img
+            class="enclosureImage"
+            src={outReptileEnclosureImage}
+            alt="elephants"
+          /> */}
         </div>
       </div>
     </div>

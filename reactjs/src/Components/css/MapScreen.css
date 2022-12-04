@@ -1,7 +1,6 @@
 html {
     zoom: 100%;
     background-color: #668d3c;
-    height: 900px;
     
 }
 body{
@@ -15,9 +14,21 @@ body{
 }
 .imagebackground {
     background-attachment: fixed;
-    max-width: 854px;
+    width: 1000px;
     height: auto;
     position: absolute;
+}
+
+.legendBox{
+    position:absolute;
+    background-color: #ffffff96;
+    align-self: center;
+    z-index: -1;
+    width: 950px;
+    height: 825px;
+    border-radius: 5%;
+    top: 1100px;
+    left: 25px;
 }
 
 .closeBtn{
@@ -47,10 +58,10 @@ body{
 
 .elephantModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 510px;
-    top: 590px;
+    left: 554px;
+    top: 760px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -171,8 +182,9 @@ body{
 
 .buttonContainerElephant{
     position: absolute;
-    left: 525px;
-    top: 545px;
+    left: 624px;
+    top: 750px;
+    z-index: 1;
     
 }
 
@@ -198,8 +210,8 @@ body{
 
 .buttonContainerHippopotamus{
     position: absolute;
-    left: 565px;
-    top: 490px;
+    left: 672px;
+    top: 685px;
 }
 
 .hippopotamusButton{
@@ -222,10 +234,10 @@ body{
 
 .hippopotamusModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 540px;
-    top: 532px;
+    left: 602px;
+    top: 695px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -235,8 +247,8 @@ body{
 
 .buttonContainerAviary{
     position: absolute;
-    left: 433px;
-    top: 460px;
+    left: 511px;
+    top: 650px;
 }
 
 .aviaryButton{
@@ -259,10 +271,10 @@ body{
 
 .aviaryModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 360px;
-    top: 532px;
+    left: 441px;
+    top: 660px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -272,8 +284,8 @@ body{
 
 .buttonContainerHyena{
     position: absolute;
-    left: 545px;
-    top: 395px;
+    left: 645px;
+    top: 568px;
 }
 
 .hyenaButton{
@@ -296,10 +308,10 @@ body{
 
 .hyenaModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 535px;
-    top: 450px;
+    left: 575px;
+    top: 578px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -309,8 +321,8 @@ body{
 
 .buttonContainerSavanna{
     position: absolute;
-    left: 618px;
-    top: 245px;
+    left: 736px;
+    top: 385px;
 }
 
 .savannaButton{
@@ -333,10 +345,10 @@ body{
 
 .savannaModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 600px;
-    top: 310px;
+    left: 666px;
+    top: 395px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -346,8 +358,8 @@ body{
 
 .buttonContainerApex{
     position: absolute;
-    left: 525px;
-    top: 290px;
+    left: 620px;
+    top: 442px;
 }
 
 .apexButton{
@@ -370,10 +382,10 @@ body{
 
 .apexModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 460px;
-    top: 315px;
+    left: 550px;
+    top: 452px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -383,8 +395,8 @@ body{
 
 .buttonContainerEndemic{
     position: absolute;
-    left: 425px;
-    top: 70px;
+    left: 502px;
+    top: 170px;
 }
 
 .endemicButton{
@@ -407,10 +419,10 @@ body{
 
 .endemicModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 460px;
-    top: 155px;
+    left: 432px;
+    top: 180px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -420,8 +432,8 @@ body{
 
 .buttonContainerOutReptile{
     position: absolute;
-    left: 379px;
-    top: 110px;
+    left: 445px;
+    top: 225px;
 }
 
 .reptileButton{
@@ -444,10 +456,10 @@ body{
 
 .reptileModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 300px;
-    top: 185px;
+    left: 375px;
+    top: 235px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -457,8 +469,8 @@ body{
 
 .buttonContainerMuseum{
     position: absolute;
-    left: 415px;
-    top: 140px;
+    left: 489px;
+    top: 255px;
 }
 
 .museumButton{
@@ -481,10 +493,10 @@ body{
 
 .museumModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 360px;
-    top: 220px;
+    left: 419px;
+    top: 265px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -494,8 +506,8 @@ body{
 
 .buttonContainerInReptile{
     position: absolute;
-    left: 245px;
-    top: 235px;
+    left: 282px;
+    top: 370px;
 }
 
 .inreptileButton{
@@ -518,10 +530,10 @@ body{
 
 .inreptileModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 170px;
-    top: 265px;
+    left: 212px;
+    top: 380px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -531,8 +543,8 @@ body{
 
 .buttonContainerLagoon{
     position: absolute;
-    left: 310px;
-    top: 225px;
+    left: 362px;
+    top: 360px;
 }
 
 .lagoonButton{
@@ -555,10 +567,47 @@ body{
 
 .lagoonModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 250px;
-    top: 290px;
+    left: 292px;
+    top: 370px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerLagoon2{
+    position: absolute;
+    left: 230px;
+    top: 720px;
+}
+
+.lagoon2Button{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+   
+    
+    color:#ff0000;
+    
+   /*  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.lagoon2Button:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.lagoon2Modal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 160px;
+    top: 730px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -568,8 +617,8 @@ body{
 
 .buttonContainerIsland{
     position: absolute;
-    left: 357px;
-    top: 300px;
+    left: 418px;
+    top: 450px;
 }
 
 .islandButton{
@@ -592,10 +641,10 @@ body{
 
 .islandModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 310px;
-    top: 355px;
+    left: 348px;
+    top: 460px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -605,8 +654,8 @@ body{
 
 .buttonContainerPrimates{
     position: absolute;
-    left: 215px;
-    top: 330px;
+    left: 245px;
+    top: 490px;
 }
 
 .primatesButton{
@@ -629,10 +678,121 @@ body{
 
 .primatesModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 180px;
-    top: 380px;
+    left: 175px;
+    top: 500px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerPark{
+    position: absolute;
+    left: 235px;
+    top: 565px;
+}
+
+.parkButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.parkButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.parkModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 165px;
+    top: 575px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerFood{
+    position: absolute;
+    left: 383px;
+    top: 698px;
+}
+
+.foodButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.foodButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.foodModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 313px;
+    top: 708px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerFood2{
+    position: absolute;
+    left: 413px;
+    top: 820px;
+}
+
+.food2Button{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.food2Button:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.food2Modal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 343px;
+    top: 830px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -642,8 +802,8 @@ body{
 
 .buttonContainerButterfly{
     position: absolute;
-    left: 135px;
-    top: 590px;
+    left: 150px;
+    top: 807px;
 }
 
 .butterflyButton{
@@ -666,10 +826,10 @@ body{
 
 .butterflyModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 110px;
-    top: 645px;
+    left: 80px;
+    top: 817px;
     height: 100%;
     width: 200px;
     overflow: auto;
@@ -679,8 +839,8 @@ body{
 
 .buttonContainerBotanical{
     position: absolute;
-    left: 245px;
-    top: 600px;
+    left: 285px;
+    top: 815px;
 }
 
 .botanicalButton{
@@ -703,16 +863,350 @@ body{
 
 .botanicalModal{
     display: 'block';
-    position: fixed;
+    position: absolute;
     z-index:1;
-    left: 230px;
-    top: 645px;
+    left: 215px;
+    top: 825px;
     height: 100%;
     width: 200px;
     overflow: auto;
     border-radius: 5px;
     justify-content: center;
 }
+
+.buttonContainerFountain{
+    position: absolute;
+    left: 345px;
+    top: 685px;
+}
+
+.fountainButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.fountainButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.fountainModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 275px;
+    top: 695px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerTicket{
+    position: absolute;
+    left: 562px;
+    top: 852px;
+}
+
+.ticketButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.ticketButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.ticketModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 492px;
+    top: 862px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerParking{
+    position: absolute;
+    left: 687px;
+    top: 854px;
+}
+
+.parkingButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.parkingButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.parkingModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 617px;
+    top: 864px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerParking2{
+    position: absolute;
+    left: 470px;
+    top: 858px;
+}
+
+.parking2Button{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.parking2Button:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.parking2Modal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 400px;
+    top: 868px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerE{
+    position: absolute;
+    left: 75px;
+    top: 884px;
+}
+
+.eButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.eButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.eModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 5px;
+    top: 894px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerF{
+    position: absolute;
+    left: 170px;
+    top: 884px;
+}
+
+.fButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.fButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.fModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 100px;
+    top: 894px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerG{
+    position: absolute;
+    left: 307px;
+    top: 886px;
+}
+
+.gButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.gButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.gModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 237px;
+    top: 896px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerC{
+    position: absolute;
+    left: 454px;
+    top: 715px;
+}
+
+.cButton{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.cButton:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.cModal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 384px;
+    top: 725px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.buttonContainerC2{
+    position: absolute;
+    left: 574px;
+    top: 660px;
+}
+
+.c2Button{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    
+    
+    color:#ff0000;
+    
+    /* box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.5); */
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+.c2Button:hover{
+   background-color: transparent;
+   transform: scale(1.2);
+}
+
+.c2Modal{
+    display: 'block';
+    position: absolute;
+    z-index:1;
+    left: 504px;
+    top: 670px;
+    height: 100%;
+    width: 200px;
+    overflow: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
 
 .button2{
     background: rgba(255, 255, 255, 0.164);
