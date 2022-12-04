@@ -1472,10 +1472,7 @@ const MapScreen = () => {
         <Parking2Modal closeModalParking2={setOpenModalParking2} />
       )}
       {openModalFood2 && <Food2Modal closeModalFood2={setOpenModalFood2} />}
-      setOpenModalFountain(false); setOpenModalPark(false);
-      setOpenModalFood(false); setOpenModalTicket(false);
-      setOpenModalParking(false); setOpenModalE(false); setOpenModalF(false);
-      setOpenModalG(false);
+
       <script src="main.js"></script>
       {/* </div> */}
     </div>
