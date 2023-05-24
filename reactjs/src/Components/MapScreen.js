@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/MapScreen.css";
+//import "./css/MapScreen.css";
 import {
   ElephantModal,
   HippopotamusModal,

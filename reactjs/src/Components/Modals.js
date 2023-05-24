@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/MapScreen.css";
+//import "./css/MapScreen.css";
 import { Route, Link, useNavigate } from "react-router-dom";
 const elephantEnclosureImage = require("./images/elephantenclosure.jpg");
 const hyenaEnclosureImage = require("./images/hyenaenclosure.jpg");
